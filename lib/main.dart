@@ -1,3 +1,4 @@
+import 'package:bloc_pattern/pages/counter/counter_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,10 +6,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-const MyApp({ Key? key }) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context){
-    return Container();
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: CounterPage(),
+    );
   }
 }
